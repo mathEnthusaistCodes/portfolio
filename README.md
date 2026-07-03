@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio
 
 A full-stack portfolio application built with React, Node.js, Express, and MongoDB. Showcases personal profile, work experience, skills, projects, and a contact form.
@@ -164,3 +165,7 @@ MONGODB_URI=mongodb+srv://...
 NODE_ENV=development
 CLIENT_URL=http://localhost:3000
 ```
+=======
+# portfolio
+My Web page
+>>>>>>> 1e35ab2a735aa3a46cebe9603227d5919e727625
