@@ -41,6 +41,14 @@ const seed = async () => {
       { name: 'Tailwind CSS', category: 'Frontend', level: 4 },
       { name: 'MongoDB', category: 'Backend', level: 3 },
       { name: 'Jest', category: 'Testing', level: 4 },
+      { name: 'Docker', category: 'Development', level: 4 },
+      { name: 'Kubernetes', category: 'Development', level: 3 },
+      { name: 'PostgreSQL', category: 'Backend', level: 4 },
+      { name: 'Redis', category: 'Backend', level: 3 },
+      { name: 'TypeScript', category: 'Frontend', level: 4 },
+      { name: 'Microservices Architecture', category: 'Development', level: 4 },
+      { name: 'WebSocket', category: 'Backend', level: 3 },
+      { name: 'Cloud Deployment', category: 'Development', level: 3 },
     ],
     experience: [
       {
@@ -166,24 +174,44 @@ const seed = async () => {
         'Designed intuitive CLI interface for parameter configuration',
       ],
     },
-    {
-      title: 'Satellite Communication Toolbox',
-      description: 'Part of a team that delivered the Satellite Communication Toolbox for designing, simulating, and verifying satellite communications systems.',
-      longDescription: 'Contributed to the MathWorks Satellite Communication Toolbox, providing MATLAB APIs, wireless algorithms, and test automation for designing and simulating satellite communication links. Involved in design, customer engagement, and a major product release.',
-      technologies: ['MATLAB', 'Wireless Algorithms', 'Test Automation', 'API Design'],
-      category: 'Toolbox Development',
-      featured: true,
-      status: 'completed',
-      repoUrl: 'https://in.mathworks.com/products/satellite-communications.html',
-      highlights: [
-        'Developed MATLAB APIs for satellite communication link design and simulation',
-        'Implemented wireless algorithms for satellite signal processing',
-        'Built test automation framework ensuring quality across releases',
-        'Engaged with customers to gather requirements and validate features',
-        'Delivered as part of a major product release',
-      ],
-    },
-  ]);
+      {
+        title: 'Satellite Communication Toolbox',
+        description: 'Part of a team that delivered the Satellite Communication Toolbox for designing, simulating, and verifying satellite communications systems.',
+        longDescription: 'Contributed to the MathWorks Satellite Communication Toolbox, providing MATLAB APIs, wireless algorithms, and test automation for designing and simulating satellite communication links. Involved in design, customer engagement, and a major product release.',
+        technologies: ['MATLAB', 'Wireless Algorithms', 'Test Automation', 'API Design'],
+        category: 'Toolbox Development',
+        featured: true,
+        status: 'completed',
+        repoUrl: 'https://in.mathworks.com/products/satellite-communications.html',
+        highlights: [
+          'Developed MATLAB APIs for satellite communication link design and simulation',
+          'Implemented wireless algorithms for satellite signal processing',
+          'Built test automation framework ensuring quality across releases',
+          'Engaged with customers to gather requirements and validate features',
+          'Delivered as part of a major product release',
+        ],
+      },
+      {
+        title: 'Fleet Management System (PoC)',
+        description: 'Scalable microservices-based fleet management platform with real-time GPS tracking, Redis caching, interactive performance load testing, and SaaS deployment strategies.',
+        longDescription: 'A proof-of-concept fleet management system showcasing production-grade architecture patterns. Built with Node.js/TypeScript microservices, PostgreSQL for relational data, Redis for caching, and Docker Compose for orchestration. Features include real-time GPS breadcrumb tracking via WebSocket, interactive performance load testing UI with configurable concurrency (1-500 users), rate limiting, circuit breaker patterns, simulated multi-region latency, cache hit/miss tracking, and a DigitalOcean deployment pipeline with health checks and automated backups.',
+        technologies: ['Node.js', 'TypeScript', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'React', 'Recharts', 'Leaflet', 'WebSocket', 'RabbitMQ'],
+        category: 'Web Development',
+        featured: true,
+        status: 'completed',
+        repoUrl: 'https://github.com/mathEnthusaistCodes/fleet-poc',
+        highlights: [
+          'Microservices architecture with 5 independent Node.js/TypeScript services behind an API gateway',
+          'PostgreSQL for relational data with indexed time-series GPS queries',
+          'Redis caching with live cache hit/miss tracking on analytics endpoints',
+          'Self-service performance load testing dashboard with concurrent user config and live results',
+          'SaaS cloud features: rate limiting, circuit breaker, simulated multi-region latency, SLA compliance tracking',
+          'Docker Compose orchestration with health checks, resource limits, and production deployment config for DigitalOcean',
+          'Synthetic data generator producing 50 vehicles, 30 drivers, 200 routes, and 100K+ GPS breadcrumbs',
+          '25+ automated tests across all services using Jest and Supertest',
+        ],
+      },
+    ]);
 
   console.log('Database seeded successfully');
   process.exit(0);
